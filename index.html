@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Delivery Confirmation and Ts & Cs Consent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+       <header class="form_header">
+       <img src ="C:\Users\DIT\Desktop\Website\facebook_1721236443446_7219388899691911425.jpg" alt="Header Image">
+      <h2>Device Delivery Confirmation and Ts & Cs Consent</h2>
+          </header>
+        
+        <form action="/submit_form" method="post">
+            <label for="phone-model">PHONE MODEL *</label>
+            <select id="phone-model" name="phone-model" required>
+                <option value="IPHONE">IPHONE</option>
+                <option value="ANDROID">ANDROID</option>
+            </select>
+
+            <label for="imei">PHONE IMEI NUMBER *</label>
+            <input type="text" id="imei" name="imei" required>
+
+            <label for="received-date">DATE OF RECEIVING PHONE *</label>
+            <input type="date" id="received-date" name="received-date" required>
+
+            <label for="courier">COURIER THAT DELIVERED THE PHONE *</label>
+            <input type="text" id="courier" name="courier" required>
+
+            <fieldset>
+                <legend>TICK THE BOX IF MENTIONED ITEM IS WORKING</legend>
+                <label><input type="checkbox" name="features" value="screen"> Screen</label>
+                <label><input type="checkbox" name="features" value="camera"> Camera</label>
+                <label><input type="checkbox" name="features" value="charging-port"> Charging port</label>
+                <label><input type="checkbox" name="features" value="network"> Network</label>
+                <label><input type="checkbox" name="features" value="fingerprint"> Fingerprint</label>
+                <label><input type="checkbox" name="features" value="truetone"> TrueTone</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>WHAT ACCESSORIES DID PHONE COME WITH?</legend>
+                <label><input type="checkbox" name="accessories" value="charger"> Charger</label>
+                <label><input type="checkbox" name="accessories" value="airpods"> AirPods</label>
+                <label><input type="checkbox" name="accessories" value="pouch"> Pouch</label>
+                <label><input type="checkbox" name="accessories" value="headset"> Headset</label>
+            </fieldset>
+
+            <label for="full-names">FULL NAMES *</label>
+            <input type="text" id="full-names" name="full-names" required>
+
+            <label for="phone-number">PHONE NUMBER *</label>
+            <input type="text" id="phone-number" name="phone-number" required>
+
+            <label for="confirmation">
+                <input type="checkbox" id="confirmation" name="confirmation" required>
+                BY TICKING THE BOX BELOW, YOU AGREE THAT THE INFORMATION GIVEN ABOVE IS CORRECT AND TRUE *
+            </label>
+
+            <fieldset>
+                <legend>TERMS AND CONDITIONS *</legend>
+                <p>Receipt Confirmation & Ts & Cs Acceptance: By completing this form, you acknowledge receipt of the phone and confirm its working condition. Furthermore, you agree to the terms and conditions. This form serves as legal proof of our product purchase transaction.</p>
+                <ol>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                </ol>
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I AGREE
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
